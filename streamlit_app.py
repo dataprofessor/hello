@@ -50,7 +50,6 @@ with st.expander('Expand to see my code'):
   '''
   st.code(code)
 
-
 st.header('What would you like to build?', divider=True)
 
 col = st.columns(4)
@@ -68,10 +67,8 @@ if st.session_state.page == 'Page 1':
   col1 = st.columns(2)
   with col1[0]:
     with st.container():
+      st.write('Test')
       #st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
   with col1[1]:
     app1 = 'https://builder.streamlit.app'
     st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=380 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
-
-
-

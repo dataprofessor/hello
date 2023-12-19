@@ -94,7 +94,7 @@ if st.session_state.page == 'Page 2':
   col2 = st.columns(2)
   with col2[0]:
     with st.container():
-      st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
+      st.code(read_gh('https://raw.githubusercontent.com/streamlit/llm-examples/main/Chatbot.py'), line_numbers=True)
   with col2[1]:
     app2 = 'https://llm-examples.streamlit.app'
     st.components.v1.html(f"""<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>""", width=None, height=420, scrolling=False)

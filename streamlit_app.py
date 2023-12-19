@@ -59,7 +59,7 @@ st.markdown("""
 # .st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, 
 
 
-st.write("I was built with # lines of code. It's wicked easy")
+st.write("I was built with # lines of code. It's wicked easy!")
 with st.expander("Expand to see this app's code"):
   code = '''
   import streamlit as st

@@ -16,11 +16,18 @@ if 'btn_type' not in st.session_state:
 
 def page1():
   st.session_state.page = 'Page 1'
-  st.session_state.btn_type = 'primary'
+  st.session_state.btn1_type = 'primary'
+  st.session_state.btn2_type = 'secondary'
+  st.session_state.btn3_type = 'secondary'
+  st.session_state.btn4_type = 'secondary'
 
 def page2():
   st.session_state.page = 'Page 2'
-  st.session_state.btn_type = 'primary'
+  st.session_state.btn1_type = 'secondary'
+  st.session_state.btn2_type = 'primary'
+  st.session_state.btn3_type = 'secondary'
+  st.session_state.btn4_type = 'secondary'
+  
 
 # Read app from GitHub repo
 def read_gh(input_url):

@@ -12,13 +12,13 @@ st.title('Welcome to Streamlit 👋')
 if 'page' not in st.session_state:
     st.session_state.page = 'Page 1'
 if 'btn1_type' not in st.session_state:
-    st.session_state.btn_type = 'primary'
+    st.session_state.btn1_type = 'primary'
 if 'btn2_type' not in st.session_state:
-    st.session_state.btn_type = 'secondary'
+    st.session_state.btn2_type = 'secondary'
 if 'btn3_type' not in st.session_state:
-    st.session_state.btn_type = 'secondary'
+    st.session_state.btn3_type = 'secondary'
 if 'btn4_type' not in st.session_state:
-    st.session_state.btn_type = 'secondary'
+    st.session_state.btn4_type = 'secondary'
 
 def page1():
   st.session_state.page = 'Page 1'

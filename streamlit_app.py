@@ -1,7 +1,13 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Welcome to Streamlit",
+                   page_icon="👋",
+                   layout="wide")
+
+st.title('Welcome to Streamlit 👋')
+
+st.button('**Exploratory Data Analysis**/nEditable dataframes, Altair charts')
 
 tab1, tab2, tab3 = st.tabs(["Option 1", "Option 2", "Option 3"])
 code = """

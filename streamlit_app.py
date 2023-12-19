@@ -31,8 +31,6 @@ st.markdown("""
     padding-bottom: 0rem;
 }
 
-
-
 </style>
 """, unsafe_allow_html=True)
 

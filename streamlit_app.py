@@ -28,16 +28,17 @@ st.markdown("""
 
 [data-testid="block-container"] {
     padding-top: 1.5rem;
-    padding-bottom: 0rem;
+}
+
+code.language-python  {
+    padding-top: 10px;
+    height: 380px;
 }
 
 </style>
 """, unsafe_allow_html=True)
 
-#.st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .div.code.language-python, div[style="background-color: transparent;"] code.language-python  {
-#    padding-top: 10px;
-#    height: 380px;
-#}
+
 
 st.write("I was built with # lines of code. It's wicked easy")
 with st.expander('Expand to see my code'):

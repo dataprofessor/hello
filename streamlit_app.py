@@ -1,5 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
+import requests
 
 # Page title
 st.set_page_config(page_title="Welcome to Streamlit",
@@ -17,6 +18,10 @@ def page1():
   st.session_state.page = 'Page 1'
   st.session_state.btn_type = 'primary'
 
+# Read app from GitHub repo
+def read_gh(input_url):
+  return requests.get(input_url).text
+# read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py')
 
 # CSS styling
 st.markdown("""

@@ -7,6 +7,14 @@ st.set_page_config(page_title="Welcome to Streamlit",
 
 st.title('Welcome to Streamlit 👋')
 
+st.write("I was built with # lines of code. It's wicked easy")
+with st.expander('Expand to see my code'):
+  st.code('''
+  import streamlit as st
+
+  st.write('Hello world!')
+  ''')
+
 st.header('What would you like to build?')
 
 col = st.columns(4)

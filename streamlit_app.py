@@ -30,7 +30,7 @@ st.markdown("""
     padding-top: 1.5rem;
 }
 
-code.language-python  {
+.div.code.language-python  {
     padding-top: 10px;
     height: 380px;
 }
@@ -38,6 +38,7 @@ code.language-python  {
 </style>
 """, unsafe_allow_html=True)
 
+# .st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, 
 
 
 st.write("I was built with # lines of code. It's wicked easy")

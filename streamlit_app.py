@@ -32,7 +32,7 @@ st.markdown("""
     margin-bottom: -1000px;
 }
 
-.st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .div.code.language-python, code.language-python {
+.st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .div.code.language-python, div[style="background-color: transparent;"] code.language-python  {
     height: 380px;
     margin-bottom: -1000px;
 }

@@ -43,7 +43,7 @@ st.markdown("""
 
 
 st.write("I was built with # lines of code. It's wicked easy")
-with st.expander('Expand to see my code'):
+with st.expander("Expand to see this app's code"):
   code = '''
   import streamlit as st
 

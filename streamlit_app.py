@@ -7,7 +7,7 @@ st.set_page_config(page_title="Welcome to Streamlit",
 
 st.title('Welcome to Streamlit 👋')
 
-cols = st.columns(4)
+col = st.columns(4)
 
 with col[0]:
   st.button('**Your Streamlit AI Assistant**')

@@ -7,7 +7,7 @@ st.set_page_config(page_title="Welcome to Streamlit",
 
 st.title('Welcome to Streamlit 👋')
 
-st.button('**Exploratory Data Analysis**/nEditable dataframes, Altair charts')
+st.button('**Exploratory Data Analysis**\nEditable dataframes, Altair charts')
 
 tab1, tab2, tab3 = st.tabs(["Option 1", "Option 2", "Option 3"])
 code = """

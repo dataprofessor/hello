@@ -15,7 +15,7 @@ with st.expander('Expand to see my code'):
   st.write('Hello world!')
   ''')
 
-st.header('What would you like to build?')
+st.header('What would you like to build?', divider=True)
 
 col = st.columns(4)
 

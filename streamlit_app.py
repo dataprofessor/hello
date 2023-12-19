@@ -7,6 +7,14 @@ st.set_page_config(page_title="Welcome to Streamlit",
                    layout="wide")
 st.title('Welcome to Streamlit 👋')
 
+# Initialize session state
+if 'page' not in st.session_state:
+    st.session_state.page = 'Page 1'
+
+def page1():
+  st.session_state.page = 'Page 1'
+
+
 # CSS styling
 st.markdown("""
 <style>
@@ -28,12 +36,12 @@ with st.expander('Expand to see my code'):
   '''
   st.code(code)
 
+
 st.header('What would you like to build?', divider=True)
 
 col = st.columns(4)
-
 with col[0]:
-  btn1 = st.button('**Your Streamlit AI Assistant**')
+  btn1 = st.button('**Your Streamlit AI Assistant**', on_click=page1)
 with col[1]:
   btn2 = st.button('**Your LLM Playground**')
 with col[2]:
@@ -41,7 +49,8 @@ with col[2]:
 with col[3]:
   btn4 = st.button('**Build your ML Model**')
 
-if btn1:
+# Display page content
+if st.session_state.page == 'Page 1':
   col1 = st.columns(2)
   with col1[0]:
     st.code(code, line_numbers=True)

@@ -21,7 +21,6 @@ def page1():
 # Read app from GitHub repo
 def read_gh(input_url):
   return requests.get(input_url).text
-# read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py')
 
 # CSS styling
 st.markdown("""
@@ -61,7 +60,7 @@ with col[3]:
 if st.session_state.page == 'Page 1':
   col1 = st.columns(2)
   with col1[0]:
-    st.code(code, line_numbers=True)
+    st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
   with col1[1]:
     app1 = 'https://builder.streamlit.app'
     st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=380 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)

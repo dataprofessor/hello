@@ -33,7 +33,7 @@ st.markdown("""
 
 .st-emotion-cache-1b2gb7x.e1ycw9pz3 {
     padding-top: 10px;
-    height: 380px;
+    height: 420px;
 }
 
 </style>
@@ -71,4 +71,4 @@ if st.session_state.page == 'Page 1':
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
   with col1[1]:
     app1 = 'https://builder.streamlit.app'
-    st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=380 style="width:100%;border:none;"></iframe>""", width=None, height=380, scrolling=False)
+    st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>""", width=None, height=420, scrolling=False)

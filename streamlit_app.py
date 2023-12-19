@@ -66,9 +66,9 @@ st.header('What would you like to build?', divider=True)
 
 col = st.columns(4)
 with col[0]:
-  btn1 = st.button('**Your Streamlit AI Assistant**', on_click=page1, type=st.session_state.btn_type)
+  btn1 = st.button('**Your Streamlit AI Assistant**', on_click=page1, type=st.session_state.btn1_type)
 with col[1]:
-  btn2 = st.button('**Your LLM Playground**', on_click=page2, type=st.session_state.btn_type)
+  btn2 = st.button('**Your LLM Playground**', on_click=page2, type=st.session_state.btn2_type)
 with col[2]:
   btn3 = st.button('**Exploratory Data Analysis**')
 with col[3]:

@@ -34,6 +34,7 @@ st.markdown("""
 
 .st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .div.code.language-python {
     height: 380px;
+    margin-bottom: -500px;
 }
 
 </style>

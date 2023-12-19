@@ -30,7 +30,7 @@ st.markdown("""
     padding-top: 1.3rem;
     padding-bottom: 0rem;
 
-.st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .code.language-python {
+.st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .div.code.language-python {
     height: 380px;
 }
 

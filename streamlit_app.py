@@ -30,7 +30,7 @@ st.markdown("""
     padding-top: 1.3rem;
     padding-bottom: 0rem;
 
-.element-container.st-emotion-cache-1clmrd1.e1f1d6gn4 {
+.stCodeBlock.st-emotion-cache-12r09dv.e1ycw9pz1 {
     height: 380px;
 }
 

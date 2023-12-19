@@ -1,11 +1,23 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
+# Page title
 st.set_page_config(page_title="Welcome to Streamlit",
                    page_icon="👋",
                    layout="wide")
-
 st.title('Welcome to Streamlit 👋')
+
+# CSS styling
+st.markdown("""
+<style>
+
+[data-testid="block-container"] {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 st.write("I was built with # lines of code. It's wicked easy")
 with st.expander('Expand to see my code'):

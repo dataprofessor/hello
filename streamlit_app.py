@@ -29,6 +29,10 @@ st.markdown("""
 [data-testid="block-container"] {
     padding-top: 1.3rem;
     padding-bottom: 0rem;
+
+[data-testid="stCodeBlock"] {
+    height: 380px;
+}
 }
 
 </style>

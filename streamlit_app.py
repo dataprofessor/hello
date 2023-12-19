@@ -30,7 +30,7 @@ st.markdown("""
     padding-top: 1.3rem;
     padding-bottom: 0rem;
 
-[data-testid="stCodeBlock"] {
+[data-testid="element-container"] {
     height: 380px;
 }
 

@@ -22,7 +22,17 @@ def page1():
 def read_gh(input_url):
   return requests.get(input_url).text
 
+# CSS styling
+st.markdown("""
+<style>
 
+[data-testid="block-container"] {
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 #.st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .div.code.language-python, div[style="background-color: transparent;"] code.language-python  {
 #    padding-top: 10px;
@@ -59,4 +69,4 @@ if st.session_state.page == 'Page 1':
       #st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
   with col1[1]:
     app1 = 'https://builder.streamlit.app'
-    st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=380 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+    st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=380 style="width:100%;border:none;"></iframe>""", width=None, scrolling=False)

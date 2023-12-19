@@ -10,6 +10,7 @@ st.title('Welcome to Streamlit 👋')
 # Initialize session state
 if 'page' not in st.session_state:
     st.session_state.page = 'Page 1'
+if 'btn_type' not in st.session_state:
     st.session_state.btn_type = 'primary'
 
 def page1():

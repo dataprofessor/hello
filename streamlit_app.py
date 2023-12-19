@@ -32,9 +32,10 @@ with col[3]:
 if btn1:
   col1 = st.columns(2)
   with col1[0]:
+    st.code(code)
+  with col1[1]:
     app1 = 'https://builder.streamlit.app'
     st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=350 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
-  with col1[1]:
-    st.code(code)
+
 
 

@@ -28,6 +28,7 @@ st.markdown("""
 
 [data-testid="block-container"] {
     padding-top: 1.5rem;
+    padding-bottom: 3rem;
 }
 
 .st-emotion-cache-1b2gb7x.e1ycw9pz3 {

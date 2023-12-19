@@ -30,7 +30,7 @@ st.markdown("""
     padding-top: 1.5rem;
 }
 
-.div.code.language-python  {
+.st-emotion-cache-1b2gb7x.e1ycw9pz3 {
     padding-top: 10px;
     height: 380px;
 }

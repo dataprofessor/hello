@@ -30,10 +30,6 @@ st.markdown("""
     padding-top: 1.3rem;
     padding-bottom: 0rem;
 
-[data-testid="element-container"] {
-    height: 380px;
-}
-
 </style>
 """, unsafe_allow_html=True)
 

@@ -7,7 +7,18 @@ st.set_page_config(page_title="Welcome to Streamlit",
 
 st.title('Welcome to Streamlit 👋')
 
-st.button('**Exploratory Data Analysis**\nEditable dataframes, Altair charts')
+cols = st.columns(4)
+
+with col[0]:
+  st.button('**Your Streamlit AI Assistant**')
+with col[1]:
+  st.button('**Your LLM Playground**')
+with col[2]:
+  st.button('**Exploratory Data Analysis**')
+with col[3]:
+  st.button('**Build your ML Model**')
+
+
 
 tab1, tab2, tab3 = st.tabs(["Option 1", "Option 2", "Option 3"])
 code = """

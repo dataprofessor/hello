@@ -33,7 +33,6 @@ st.markdown("""
 [data-testid="stCodeBlock"] {
     height: 380px;
 }
-}
 
 </style>
 """, unsafe_allow_html=True)

@@ -12,7 +12,7 @@ st.markdown("""
 <style>
 
 [data-testid="block-container"] {
-    padding-top: 1.25rem;
+    padding-top: 1.3rem;
     padding-bottom: 0rem;
 }
 

@@ -28,7 +28,9 @@ st.markdown("""
 
 [data-testid="block-container"] {
     padding-top: 1.3rem;
-    padding-bottom: -5rem;
+    padding-bottom: 0rem;
+    margin-bottom: -7rem;
+}
 
 .st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, .div.code.language-python {
     height: 380px;

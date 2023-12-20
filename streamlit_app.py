@@ -21,6 +21,7 @@ if 'btn4_type' not in st.session_state:
     st.session_state.btn4_type = 'secondary'
 
 # Custom functions
+## Button types
 def page1():
   st.session_state.page = 'Page 1'
   st.session_state.btn1_type = 'primary'
@@ -35,18 +36,33 @@ def page2():
   st.session_state.btn3_type = 'secondary'
   st.session_state.btn4_type = 'secondary'
 
+def page3():
+  st.session_state.page = 'Page 3'
+  st.session_state.btn1_type = 'secondary'
+  st.session_state.btn2_type = 'secondary'
+  st.session_state.btn3_type = 'primary'
+  st.session_state.btn4_type = 'secondary'
+
+def page4():
+  st.session_state.page = 'Page 4'
+  st.session_state.btn1_type = 'secondary'
+  st.session_state.btn2_type = 'secondary'
+  st.session_state.btn3_type = 'secondary'
+  st.session_state.btn4_type = 'primary'
+
+## Load app page
 @st.cache_data
 def app_page1():
   return st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
-@st.cache_data
+@st.cache_resource
 def app_page2():
   return st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
-
-# Read app from GitHub repo
+## Read app from GitHub repo
 def read_gh(input_url):
   return requests.get(input_url).text
+
 
 # CSS styling
 st.markdown("""

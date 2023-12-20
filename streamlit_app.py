@@ -60,7 +60,6 @@ def app_page2():
   return st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
 ## Read app from GitHub repo
-@st.cache_data
 def read_gh(input_url):
   return requests.get(input_url).text
 

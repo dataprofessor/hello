@@ -77,12 +77,13 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# .st-emotion-cache-1b2gb7x.e1ycw9pz3, .st-emotion-cache-keje6w.e1f1d6gn3, 
-
 
 st.write("I was built with # lines of code. It's wicked easy!")
 with st.expander("Expand to see this app's code"):
-  st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py'), line_numbers=True)
+  app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
+  st.code(app_code, line_numbers=True)
+
+  st.write(app_code)
 
 st.header('What would you like to build?', divider=True)
 

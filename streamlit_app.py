@@ -51,7 +51,7 @@ def page4():
   st.session_state.btn4_type = 'primary'
 
 ## Load app page
-@st.cachce_data
+@st.cache_data
 def app_page(input_url):
   return st.components.v1.html(f'''<iframe src="{input_url}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 

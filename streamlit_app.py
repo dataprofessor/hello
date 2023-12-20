@@ -83,7 +83,7 @@ with st.expander("Expand to see this app's code"):
   app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
   st.code(app_code, line_numbers=True)
 
-  st.write(app_code)
+  st.write(len(app_code))
 
 st.header('What would you like to build?', divider=True)
 

@@ -120,7 +120,7 @@ if st.session_state.page == 'Page 3':
   col3 = st.columns(2)
   with col3[0]:
     with st.container():
-      st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/ml-app-v2/master/streamlit_app.py'), line_numbers=True)
+      st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/machinelearning-app/master/streamlit_app.py'), line_numbers=True)
   with col3[1]:
     app3 = 'https://machinelearning-app.streamlit.app/'
     app_page(app3)

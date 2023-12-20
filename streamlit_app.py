@@ -78,7 +78,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.write(f"I was built with {app_code.count('\n')} lines of code. It's wicked easy!")
+st.write(f"I was built with {app_code.count('\n')} lines of code. It\'s wicked easy!")
 with st.expander("Expand to see this app's code"):
   app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
   st.code(app_code, line_numbers=True)

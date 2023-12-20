@@ -51,7 +51,7 @@ def page4():
   st.session_state.btn4_type = 'primary'
 
 ## Load app page
-@st.cache_resource
+@st.cache_data
 def app_page(input_url):
   return st.components.v1.html(f'''<iframe src="{input_url}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
@@ -82,7 +82,7 @@ st.markdown("""
 
 st.write("I was built with # lines of code. It's wicked easy!")
 with st.expander("Expand to see this app's code"):
-  st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py?token=GHSAT0AAAAAAB7ALDVJ6ZGZ2WFE42CUBNHQZMCJ2PQ'), line_numbers=True)
+  st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py'), line_numbers=True)
 
 st.header('What would you like to build?', divider=True)
 

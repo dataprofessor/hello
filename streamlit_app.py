@@ -82,11 +82,6 @@ st.markdown("""
 
 st.write("I was built with # lines of code. It's wicked easy!")
 with st.expander("Expand to see this app's code"):
-  code = '''
-  import streamlit as st
-
-  st.write('Hello world!')
-  '''
   st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py?token=GHSAT0AAAAAAB7ALDVJ6ZGZ2WFE42CUBNHQZMCJ2PQ'), line_numbers=True)
 
 st.header('What would you like to build?', divider=True)

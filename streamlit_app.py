@@ -59,7 +59,6 @@ def app_page(input_url):
 def read_gh(input_url):
   return requests.get(input_url).text
 
-
 # CSS styling
 st.markdown("""
 <style>
@@ -78,9 +77,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.write(f"I was built with {app_code.count('\n')} lines of code. It is wicked easy!")
+# Page description
+app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
+app_line_count = app_code.count('\n')
+st.write(f"I was built with {app_line_count} lines of code. It's wicked easy!")
 with st.expander("Expand to see this app's code"):
-  app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
   st.code(app_code, line_numbers=True)
 
 st.header('What would you like to build?', divider=True)

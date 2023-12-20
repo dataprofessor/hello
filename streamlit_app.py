@@ -51,11 +51,11 @@ def page4():
   st.session_state.btn4_type = 'primary'
 
 ## Load app page
-@st.cache_data
+
 def app_page1():
   return st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
-@st.cache_data
+
 def app_page2():
   return st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 

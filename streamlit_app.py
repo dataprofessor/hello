@@ -20,6 +20,7 @@ if 'btn3_type' not in st.session_state:
 if 'btn4_type' not in st.session_state:
     st.session_state.btn4_type = 'secondary'
 
+# Custom functions
 def page1():
   st.session_state.page = 'Page 1'
   st.session_state.btn1_type = 'primary'
@@ -33,7 +34,15 @@ def page2():
   st.session_state.btn2_type = 'primary'
   st.session_state.btn3_type = 'secondary'
   st.session_state.btn4_type = 'secondary'
-  
+
+@st.cache_data
+def app_page1():
+  return st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
+
+@st.cache_data
+def app_page2():
+  return st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
+
 
 # Read app from GitHub repo
 def read_gh(input_url):
@@ -88,7 +97,7 @@ if st.session_state.page == 'Page 1':
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
   with col1[1]:
     app1 = 'https://builder.streamlit.app'
-    st.components.v1.html(f"""<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>""", width=None, height=420, scrolling=False)
+    # st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
 if st.session_state.page == 'Page 2':
   col2 = st.columns(2)
@@ -97,4 +106,4 @@ if st.session_state.page == 'Page 2':
       st.code(read_gh('https://raw.githubusercontent.com/streamlit/llm-examples/main/Chatbot.py'), line_numbers=True)
   with col2[1]:
     app2 = 'https://llm-examples.streamlit.app'
-    st.components.v1.html(f"""<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>""", width=None, height=420, scrolling=False)
+    # st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)

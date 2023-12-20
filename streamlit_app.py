@@ -97,9 +97,9 @@ with col[0]:
 with col[1]:
   btn2 = st.button('**Your LLM Playground**', on_click=page2, type=st.session_state.btn2_type)
 with col[2]:
-  btn3 = st.button('**Exploratory Data Analysis**')
+  btn3 = st.button('**Exploratory Data Analysis**', on_click=page3, type=st.session_state.btn3_type)
 with col[3]:
-  btn4 = st.button('**Build your ML Model**')
+  btn4 = st.button('**Build your ML Model**', on_click=page4, type=st.session_state.btn4_type)
 
 # Display page content
 if st.session_state.page == 'Page 1':
@@ -128,5 +128,14 @@ if st.session_state.page == 'Page 3':
     with st.container():
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/movies-explorer/master/streamlit_app.py'), line_numbers=True)
   with col3[1]:
-    app3 = 'https://llm-examples.streamlit.app'
+    app3 = 'https://movies-explorer.streamlit.app'
     app_page(app3)
+
+if st.session_state.page == 'Page 4':
+  col4 = st.columns(2)
+  with col4[0]:
+    with st.container():
+      st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/ml-app-v2/master/streamlit_app.py'), line_numbers=True)
+  with col4[1]:
+    app4 = 'https://ml-app-v2.streamlit.app/'
+    app_page(app4)

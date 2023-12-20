@@ -121,3 +121,12 @@ if st.session_state.page == 'Page 2':
     app2 = 'https://llm-examples.streamlit.app'
     app_page(app2)
     # st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
+
+if st.session_state.page == 'Page 3':
+  col3 = st.columns(2)
+  with col3[0]:
+    with st.container():
+      st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/movies-explorer/master/streamlit_app.py'), line_numbers=True)
+  with col3[1]:
+    app3 = 'https://llm-examples.streamlit.app'
+    app_page(app3)

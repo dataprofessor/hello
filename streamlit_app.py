@@ -51,13 +51,9 @@ def page4():
   st.session_state.btn4_type = 'primary'
 
 ## Load app page
-@st.cachce_resource
-def app_page1():
-  return st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
-
-
-def app_page2():
-  return st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
+@st.cachce_data
+def app_page(input_url):
+  return st.components.v1.html(f'''<iframe src="{input_url}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
 ## Read app from GitHub repo
 def read_gh(input_url):
@@ -113,7 +109,7 @@ if st.session_state.page == 'Page 1':
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
   with col1[1]:
     app1 = 'https://builder.streamlit.app'
-    app_page1()
+    app_page(app1)
     # st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
 if st.session_state.page == 'Page 2':
@@ -123,5 +119,5 @@ if st.session_state.page == 'Page 2':
       st.code(read_gh('https://raw.githubusercontent.com/streamlit/llm-examples/main/Chatbot.py'), line_numbers=True)
   with col2[1]:
     app2 = 'https://llm-examples.streamlit.app'
-    app_page2()
+    app_page(app2)
     # st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)

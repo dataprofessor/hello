@@ -94,7 +94,7 @@ with col[1]:
 with col[2]:
   btn3 = st.button('**Build your ML Model**', on_click=page3, type=st.session_state.btn3_type)
 with col[3]:
-  btn4 = st.button('**Workflow**', on_click=page4, type=st.session_state.btn4_type)
+  btn4 = st.button('**Support Ticket Workflow**', on_click=page4, type=st.session_state.btn4_type)
 
 # Display page content
 if st.session_state.page == 'Page 1':

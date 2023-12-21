@@ -129,8 +129,8 @@ if st.session_state.page == 'Page 4':
   col4 = st.columns(2)
   with col4[0]:
     with st.container():
-      st.code(read_gh('https://raw.githubusercontent.com/streamlit/llm-examples/main/Chatbot.py'), line_numbers=True)
+      st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/support-ticket-workflow/master/streamlit_app.py'), line_numbers=True)
   with col4[1]:
-    app4 = 'https://llm-examples.streamlit.app'
+    app4 = 'https://support-ticket-workflow.streamlit.app/'
     app_page(app4)
     # st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)

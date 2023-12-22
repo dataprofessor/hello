@@ -8,48 +8,6 @@ st.set_page_config(page_title="Welcome to Streamlit",
                    layout="wide")
 st.title('Welcome to Streamlit 👋')
 
-# Initialize session state
-if 'page' not in st.session_state:
-    st.session_state.page = 'Page 1'
-if 'btn1_type' not in st.session_state:
-    st.session_state.btn1_type = 'primary'
-if 'btn2_type' not in st.session_state:
-    st.session_state.btn2_type = 'secondary'
-if 'btn3_type' not in st.session_state:
-    st.session_state.btn3_type = 'secondary'
-if 'btn4_type' not in st.session_state:
-    st.session_state.btn4_type = 'secondary'
-
-# Custom functions
-## Button types
-def page1():
-  st.session_state.page = 'Page 1'
-  st.session_state.btn1_type = 'primary'
-  st.session_state.btn2_type = 'secondary'
-  st.session_state.btn3_type = 'secondary'
-  st.session_state.btn4_type = 'secondary'
-
-def page2():
-  st.session_state.page = 'Page 2'
-  st.session_state.btn1_type = 'secondary'
-  st.session_state.btn2_type = 'primary'
-  st.session_state.btn3_type = 'secondary'
-  st.session_state.btn4_type = 'secondary'
-
-def page3():
-  st.session_state.page = 'Page 3'
-  st.session_state.btn1_type = 'secondary'
-  st.session_state.btn2_type = 'secondary'
-  st.session_state.btn3_type = 'primary'
-  st.session_state.btn4_type = 'secondary'
-
-def page4():
-  st.session_state.page = 'Page 4'
-  st.session_state.btn1_type = 'secondary'
-  st.session_state.btn2_type = 'secondary'
-  st.session_state.btn3_type = 'secondary'
-  st.session_state.btn4_type = 'primary'
-
 ## Load app page
 @st.cache_resource
 def app_page(input_url):
@@ -85,6 +43,7 @@ with st.expander("Expand to see this app's code"):
   st.code(app_code, line_numbers=True)
 
 st.header('What would you like to build?', divider=True)
+st.info('A faster way to build interactive data apps with just a few lines of code!')
 
 tab = st.tabs(['Your Streamlit AI Assistant',
                                  'Exploratory Data Analysis',
@@ -92,18 +51,7 @@ tab = st.tabs(['Your Streamlit AI Assistant',
                                  'Support Ticket Workflow']
                                 )
 
-#col = st.columns(4)
-#with col[0]:
-#  btn1 = st.button('**Your Streamlit AI Assistant**', on_click=page1, type=st.session_state.btn1_type)
-#with col[1]:
-#  btn2 = st.button('**Exploratory Data Analysis**', on_click=page2, type=st.session_state.btn2_type)
-#with col[2]:
-#  btn3 = st.button('**Build your ML Model**', on_click=page3, type=st.session_state.btn3_type)
-#with col[3]:
-#  btn4 = st.button('**Support Ticket Workflow**', on_click=page4, type=st.session_state.btn4_type)
-
 # Display page content
-#if st.session_state.page == 'Page 1':
 with tab[0]:
   col1 = st.columns(2)
   with col1[0]:
@@ -114,7 +62,6 @@ with tab[0]:
     app_page(app1)
     # st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
-#if st.session_state.page == 'Page 2':
 with tab[1]:
   col2 = st.columns(2)
   with col2[0]:
@@ -124,7 +71,6 @@ with tab[1]:
     app2 = 'https://movies-explorer.streamlit.app'
     app_page(app2)
 
-#if st.session_state.page == 'Page 3':
 with tab[2]:
   col3 = st.columns(2)
   with col3[0]:
@@ -134,8 +80,6 @@ with tab[2]:
     app3 = 'https://machinelearning1.streamlit.app/'
     app_page(app3)
 
-
-#if st.session_state.page == 'Page 4':
 with tab[3]:
   col4 = st.columns(2)
   with col4[0]:
@@ -144,4 +88,3 @@ with tab[3]:
   with col4[1]:
     app4 = 'https://support-ticket-workflow.streamlit.app/'
     app_page(app4)
-    # st.components.v1.html(f'''<iframe src="{app2}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)

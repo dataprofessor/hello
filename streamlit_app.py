@@ -86,10 +86,10 @@ with st.expander("Expand to see this app's code"):
 
 st.header('What would you like to build?', divider=True)
 
-tab1, tab2, tab3, tab4 = st.tabs(['Your Streamlit AI Assistant'],
-                                 ['Exploratory Data Analysis'],
-                                 ['Build your ML Model'],
-                                 ['Support Ticket Workflow']
+tab = st.tabs(['Your Streamlit AI Assistant',
+                                 'Exploratory Data Analysis',
+                                 'Build your ML Model',
+                                 'Support Ticket Workflow']
                                 )
 
 #col = st.columns(4)
@@ -104,7 +104,7 @@ tab1, tab2, tab3, tab4 = st.tabs(['Your Streamlit AI Assistant'],
 
 # Display page content
 #if st.session_state.page == 'Page 1':
-with tab1:
+with tab[0]:
   col1 = st.columns(2)
   with col1[0]:
     with st.container():
@@ -115,7 +115,7 @@ with tab1:
     # st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
 #if st.session_state.page == 'Page 2':
-with tab2:
+with tab[1]:
   col2 = st.columns(2)
   with col2[0]:
     with st.container():
@@ -125,7 +125,7 @@ with tab2:
     app_page(app2)
 
 #if st.session_state.page == 'Page 3':
-with tab3:
+with tab[2]:
   col3 = st.columns(2)
   with col3[0]:
     with st.container():
@@ -136,7 +136,7 @@ with tab3:
 
 
 #if st.session_state.page == 'Page 4':
-with tab4:
+with tab[3]:
   col4 = st.columns(2)
   with col4[0]:
     with st.container():

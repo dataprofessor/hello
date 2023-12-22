@@ -38,8 +38,8 @@ st.markdown("""
 # Page description
 app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
 app_line_count = app_code.count('\n')
-st.write(f"I was built in {app_line_count} lines of code. It's wicked easy!")
-with st.expander("Expand to see this app's code"):
+
+with st.expander(f"I was built in {app_line_count} lines of code, expand here to see"):
   st.code(app_code, line_numbers=True)
 
 st.header('What would you like to build?', divider=True)

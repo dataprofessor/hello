@@ -9,6 +9,7 @@ st.set_page_config(page_title="Welcome to Streamlit",
                    layout="wide")
 st.title('Welcome to Streamlit 👋')
 
+# CSS styling
 load_css()
 
 ## Load app page

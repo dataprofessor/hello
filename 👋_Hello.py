@@ -11,10 +11,6 @@ st.title('Welcome to Streamlit 👋')
 
 load_css()
 
-# Sidebar
-#with st.sidebar:
-  
-
 ## Load app page
 @st.cache_resource
 def app_page(input_url):

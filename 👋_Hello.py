@@ -25,7 +25,7 @@ def read_gh(input_url):
   return requests.get(input_url).text
 
 # Page description
-app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
+app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/👋_Hello.py')
 app_line_count = app_code.count('\n')
 
 with st.expander(f"I was built in {app_line_count} lines of code, expand here to see"):

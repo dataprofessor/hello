@@ -29,9 +29,9 @@ def load_css():
   
   i:hover {transform: scale(1.5);}
   
-  .fa-github:hover {color: #B3B6B7;}
+  .fa-github:hover {color: #111111;}
   .fa-instagram:hover {color: #c32aa3;}
-  .fa-twitter:hover {color: #1da1f2;}
+  .fa-twitter:hover {color: #111111;}
   .fa-linkedin-in:hover {color: #0a66c2;}
   .fa-youtube:hover {color: #ff0000;}
   '''

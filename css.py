@@ -20,7 +20,7 @@ def load_css():
   # Social icons https://codepen.io/kpdushanmaduka/pen/jadeoO
   css_styles = '''
   i {
-    color: #111111;
+    color: #616A6B;
     letter-spacing: 9px;
     padding: 0.5cm 0cm 0.5cm 0cm;
     font-size: 20px;

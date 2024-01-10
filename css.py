@@ -35,7 +35,7 @@ def load_css():
   .fa-linkedin-in:hover {color: #0a66c2;}
   .fa-youtube:hover {color: #ff0000;}
   '''
-  st.markdown(f'<style>{css_styles}</style>', unsafe_allow_html=True)
+  st.sidebar.markdown(f'<style>{css_styles}</style>', unsafe_allow_html=True)
       
   # Font awesome icon
   fa_css = '''
@@ -51,4 +51,4 @@ def load_css():
   </p>
   '''      
 
-  st.write(fa_css, unsafe_allow_html=True)
+  st.sidebar.markdown(fa_css, unsafe_allow_html=True)

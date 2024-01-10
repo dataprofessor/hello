@@ -22,24 +22,6 @@ def app_page(input_url):
 def read_gh(input_url):
   return requests.get(input_url).text
 
-# CSS styling
-st.markdown("""
-<style>
-
-[data-testid="block-container"] {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.st-emotion-cache-1b2gb7x.e1ycw9pz3 {
-    padding-top: 10px;
-    height: 420px;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-
 # Page description
 app_code = read_gh('https://raw.githubusercontent.com/dataprofessor/hello/master/streamlit_app.py')
 app_line_count = app_code.count('\n')

@@ -29,11 +29,9 @@ def load_css():
   
   i:hover {transform: scale(1.5);}
   
-  .fa-github:hover {color: #111111;}
-  .fa-instagram:hover {color: #c32aa3;}
   .fa-twitter:hover {color: #111111;}
   .fa-linkedin-in:hover {color: #0a66c2;}
-  .fa-youtube:hover {color: #ff0000;}
+  .fa-discourse:hover {color: #111111;}
   '''
   st.sidebar.markdown(f'<style>{css_styles}</style>', unsafe_allow_html=True)
       
@@ -43,11 +41,9 @@ def load_css():
   
   <p align="center">
       Tag us when you publish your app! <br>
-      <a href="https://github.com/streamlit"><i class="fab fa-github"></i></a>
       <a href="https://twitter.com/streamlit/"><i class="fa-brands fa-x-twitter"></i></a>
       <a href="https://www.linkedin.com/company/streamlit/"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://www.youtube.com/@streamlitofficial"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.instagram.com/streamlit.io/"><i class="fab fa-instagram"></i></a>
+      <a href="https://discuss.streamlit.io/"><i class="fab fa-discourse"></i></a>
   </p>
   '''      
 

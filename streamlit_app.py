@@ -8,6 +8,10 @@ st.set_page_config(page_title="Welcome to Streamlit",
                    layout="wide")
 st.title('Welcome to Streamlit 👋')
 
+# Sidebar
+#with st.sidebar:
+  
+
 ## Load app page
 @st.cache_resource
 def app_page(input_url):

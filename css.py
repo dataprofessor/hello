@@ -42,7 +42,7 @@ def load_css():
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   
   <p align="center">
-      <span style="color: #FFBD45;">Follow:</span>&nbsp;
+      Tag us when you publish your app! <br>
       <a href="https://github.com/streamlit"><i class="fab fa-github"></i></a>
       <a href="https://twitter.com/streamlit/"><i class="fa-brands fa-x-twitter"></i></a>
       <a href="https://www.linkedin.com/company/streamlit/"><i class="fab fa-linkedin-in"></i></a>

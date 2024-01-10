@@ -1,13 +1,15 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import requests
-import css
+from css import load_css
 
 # Page title
 st.set_page_config(page_title="Welcome to Streamlit",
                    page_icon="👋",
                    layout="wide")
 st.title('Welcome to Streamlit 👋')
+
+load_css()
 
 # Sidebar
 #with st.sidebar:

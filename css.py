@@ -41,7 +41,7 @@ def load_css():
   
   <p align="center">
       Tag us when you publish your app! <br>
-      <a href="https://twitter.com/streamlit/"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://twitter.com/streamlit/"><i class="fab fa-x-twitter"></i></a>
       <a href="https://www.linkedin.com/company/streamlit/"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://discuss.streamlit.io/"><i class="fab fa-discourse"></i></a>
   </p>

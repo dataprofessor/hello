@@ -39,7 +39,7 @@ tab = st.tabs(['Your Streamlit AI Assistant',
 
 # Display page content
 with tab[0]:
-  col1 = st.columns(2)
+  col1 = st.columns((0.4,0.6))
   with col1[0]:
     with st.container():
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/builder/master/streamlit_app.py'), line_numbers=True)
@@ -49,7 +49,7 @@ with tab[0]:
     # st.components.v1.html(f'''<iframe src="{app1}/?embed=true" height=420 style="width:100%;border:none;"></iframe>''', width=None, height=420, scrolling=False)
 
 with tab[1]:
-  col2 = st.columns(2)
+  col2 = st.columns((0.4,0.6))
   with col2[0]:
     with st.container():
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/movies-explorer/master/streamlit_app.py'), line_numbers=True)
@@ -58,7 +58,7 @@ with tab[1]:
     app_page(app2)
 
 with tab[2]:
-  col3 = st.columns(2)
+  col3 = st.columns((0.4,0.6))
   with col3[0]:
     with st.container():
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/machinelearning-app/master/streamlit_app.py'), line_numbers=True)
@@ -67,7 +67,7 @@ with tab[2]:
     app_page(app3)
 
 with tab[3]:
-  col4 = st.columns(2)
+  col4 = st.columns((0.4,0.6))
   with col4[0]:
     with st.container():
       st.code(read_gh('https://raw.githubusercontent.com/dataprofessor/support-ticket-workflow/master/streamlit_app.py'), line_numbers=True)

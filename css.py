@@ -3,22 +3,22 @@ import streamlit as st
 def load_css():
   # Page syling
   st.markdown("""
-  <style>
-  
-  [data-testid="block-container"] {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-  }
-  
-  .st-emotion-cache-1b2gb7x.e1ycw9pz3 {
-      padding-top: 10px;
-      height: 420px;
-  }
-  </style>
+    <style>
+    
+    [data-testid="block-container"] {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .st-emotion-cache-1b2gb7x.e1ycw9pz3 {
+        padding-top: 10px;
+        height: 420px;
+    }
+    </style>
   """, unsafe_allow_html=True)
   
   # Font awesome icon
-  st.markdown('''
+  css_styles = '''
     i {
       color: #FFFFFF;
       letter-spacing: 9px;
@@ -35,11 +35,10 @@ def load_css():
     .fa-linkedin-in:hover {color: #0a66c2;}
     .fa-youtube:hover {color: #ff0000;}
     '''
-    st.markdown(f'<style>{css_styles}</style>', unsafe_allow_html=True)
+  st.markdown(f'<style>{css_styles}</style>', unsafe_allow_html=True)
         
-    
+  st.markdown(
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
     <p align="center">
         <span style="color: #FFBD45;">Follow:</span>&nbsp;
         <a href="https://github.com/streamlit"><i class="fab fa-github"></i></a>
